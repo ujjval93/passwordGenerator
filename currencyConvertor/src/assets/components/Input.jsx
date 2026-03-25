@@ -11,7 +11,7 @@ const Input = () => {
 
   // Convert
   const convert = () => {
-    const rate = data[to] || 0;
+    const rate = currencies[to] || 0;
     setConverted(amount * rate);
   };
 
