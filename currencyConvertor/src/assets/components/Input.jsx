@@ -23,7 +23,7 @@ const Input = () => {
 
   return (
     <div className="flex items-center justify-center h-screen w-screen">
-      <div className="bg-white/20 backdrop-blur-md w-[40%] p-5 rounded-xl flex flex-col items-center">
+      <div className="relative bg-white/20 backdrop-blur-md w-[40%] p-5 rounded-xl flex flex-col items-center">
         
 
         {/* from and sections or input the value */}
@@ -62,14 +62,14 @@ const Input = () => {
         {/* SWAP */}
         <button
           onClick={swap}
-          className="bg-blue-500 text-white px-4 py-1 rounded-md -my-2 z-10"
+          className="absolute bg-blue-500 text-white px-4 py-1 rounded-md mt-23 z-10"
         >
           Swap
         </button>
 
 
         {/* to and display the converted value */}
-        <div className="flex justify-between items-center p-5 w-full bg-white text-black rounded-lg mt-3">
+        <div className="flex justify-between items-center p-5 w-full bg-white text-black rounded-lg">
           <div>
             <p className="text-sm text-gray-500">To</p>
             <input
